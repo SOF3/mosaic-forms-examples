@@ -1,0 +1,10 @@
+name: SimpleWarpUI
+version: 0.1.0
+api: [3.0.0-ALPHA11]
+main: SOFe\Tests\MosaicForms\SimpleWarpUI\Main
+depend: [SimpleWarp]
+
+commands:
+  warpui:
+    description: Displays the SimpleWarp UI
+    default: true
