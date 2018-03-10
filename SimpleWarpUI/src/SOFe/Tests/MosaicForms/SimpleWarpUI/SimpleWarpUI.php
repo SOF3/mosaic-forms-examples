@@ -41,7 +41,9 @@ use pocketmine\form\layout\MenuForm;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 
-class Main extends PluginBase{
+class SimpleWarpUI extends PluginBase{
+	public const LIST_FORM_TAG = "SimpleWarpUI.WarpList";
+
 	/** @var SimpleWarp */
 	private $swApi;
 
@@ -57,6 +59,7 @@ class Main extends PluginBase{
 			}
 
 			$form = new MenuForm("Warp list", "Click on a warp to visit");
+			$form->setTag(self::LIST_FORM_TAG); // optional; allows other plugins to identify this form
 
 			foreach($this->swApi->getWarpManager() as $warp){
 				/** @var Warp $warp */

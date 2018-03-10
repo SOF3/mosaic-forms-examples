@@ -1,0 +1,5 @@
+name: SimpleWarpUI-TargetSelector
+version: 0.1.0
+api: [3.0.0-ALPHA11]
+main: SOFe\Tests\MosaicForms\SimpleWarpUI_TargetSelector\TargetSelector
+depend: [SimpleWarpUI]

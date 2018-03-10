@@ -1,3 +1,5 @@
 projects:
   SimpleWarpUI:
     path: SimpleWarpUI
+  SimpleWarpUI-TargetSelector:
+    path: SimpleWarpUI-TargetSelector
